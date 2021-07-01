@@ -760,8 +760,8 @@ var
   MemDC : HDC;
 begin
   Bitmap := TBitmap.Create;
-  Bitmap.LoadFromFile ('ô.bmp');
- //Bitmap.LoadFromResourceName(hinstance, 'BMP1');
+ // Bitmap.LoadFromFile ('ô.bmp');
+ Bitmap.LoadFromResourceName(hinstance, 'BMP1');
   with BMinfo.bmiHeader do begin
     FillChar (BMInfo, SizeOf(BMInfo), 0);
     biSize := sizeof (TBitmapInfoHeader);
